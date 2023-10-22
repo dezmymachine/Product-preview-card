@@ -33,7 +33,7 @@ body{
      display: flex;
      align-items: center;
      overflow: hidden;
-     border-radius: inherit;
+     border-radius: 1rem 0 0 1rem;
 }
 img{
      max-width: 100%; 
