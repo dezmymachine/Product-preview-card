@@ -139,4 +139,7 @@ h4{
           display: grid;
           grid-template-columns: 1fr;
 }
+     .image{
+          border-radius:1rem 1rem 0 0;
+     }
 }
