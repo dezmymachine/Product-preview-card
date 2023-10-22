@@ -1,0 +1,142 @@
+:root{
+     /* Primary */
+--primary-clr-dark:hsl(158, 36%, 37%);
+--primary-clr-cream: hsl(32, 37%, 92%);
+
+
+--dark-blue: hsl(212, 21%, 14%);
+--dark-grayish-blue: hsl(228, 12%, 48%);
+--white: hsl(0, 0%, 100%);
+}
+
+body{
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--primary-clr-cream);
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     background-color: var(--white);
+     max-width: 800px;
+     margin: auto;
+     border-radius: 1rem;
+}
+
+.image{
+     display: flex;
+     align-items: center;
+     overflow: hidden;
+     border-radius: inherit;
+}
+img{
+     max-width: 100%; 
+     height: auto;
+     
+}
+
+.card-text{
+     padding: 2rem;
+     display: flex;
+     flex-direction: column;
+}
+
+/* Text styles */
+
+p{
+     font-size: 14px;
+     color: var(--dark-blue);
+}
+.perfume{
+     letter-spacing: 0.5rem;
+     color: var(--dark-blue);
+}
+
+h2{
+     font-family: 'Fraunces';
+     margin-bottom: 0;
+     font-weight: 700;
+     font-size: 2.9rem;
+}
+h2:hover{
+     color: var(--primary-clr-dark);
+     transition: color 0.3s ease-in-out;
+     cursor: pointer;
+}
+.floral{
+     line-height: 1.8;
+}
+
+.prices{
+     display: flex;
+     align-items: center;
+}
+h4{
+     color: var(--primary-clr-dark);
+     font-family: 'Fraunces';
+     font-weight: 700;
+     font-size: 2rem;
+     padding-right: 1.5rem;
+     text-decoration: none;
+}
+#frmer-price{
+     text-decoration: line-through;
+     font-size: 14px;
+     color: var(--dark-blue);
+}
+
+/* Button styles */
+.cart-button{
+     background: var(--primary-clr-dark);
+     outline: none;
+     border: none;
+     font-size: 1rem;
+     color: var(--white);
+     font-family: 'Montserrat';
+     padding: 1rem;
+     border-radius: 0.5rem;
+}
+.cart-icon{
+     height: 100%;
+     padding-right: 0.5rem;
+}
+
+.cart-button:hover{
+     cursor: pointer;
+     filter: brightness(90%);
+
+}
+
+/* Animation for image hover */
+#hover-image{
+     transition: transform 0.3s, filter 0.3s;
+     max-width: 100%; 
+     height: auto;
+}
+#hover-image:hover{
+     transform: scale(1.1); /* Scale the image up on hover */
+    filter: brightness(80%);
+}
+
+/* Styles for attribution */
+.attribution{
+     font-size: 11px; text-align: center;
+     }
+.attribution a{
+     color: hsl(228, 45%, 44%); 
+    }
+
+/* media queries for responsive design on phones */
+@media (max-width:798px){
+     .card{
+          max-width: 100%;
+          display: grid;
+          grid-template-columns: 1fr;
+}
+}
